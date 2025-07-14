@@ -1,52 +1,150 @@
-# MERN Stack Capstone Project
+# Task Flow Organizer
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+A fully functional, multi-user **Task Management App** built with the **MERN stack** (MongoDB, Express.js, React with Next.js, Node.js). This application helps users manage personal and professional tasks efficiently with features like deadlines, priority levels, tags, recurring tasks, drag-and-drop organization, calendar view, and more.
 
-## Assignment Overview
+## 🚀 Live Demo
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+Access the live deployed app here:  
+[https://task-flow-organizer-51.lovable.app/](https://task-flow-organizer-51.lovable.app/)
 
-## Getting Started
+---
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+## ✅ Features
 
-## Files Included
+- User registration and login (JWT Authentication)
+- Secure password storage using bcrypt
+- Create, edit, delete, and organize tasks
+- Prioritize tasks (High, Medium, Low)
+- Set deadlines and automatic reminders
+- Recurring tasks (Daily, Weekly, Monthly)
+- Task categorization using tags
+- Filter and sort tasks by status, priority, or tags
+- Drag-and-drop task reordering
+- Calendar view for visual task tracking
+- Mobile-responsive design using Tailwind CSS
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+---
 
-## Requirements
+## 🔧 Functionalities
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+### User Authentication
+- Secure sign-up and login with JWT
+- Passwords hashed using bcrypt
+- Auth-protected routes
+- Each user sees only their own tasks
 
-## Project Ideas
+### Task Management
+- CRUD operations on tasks
+- Task fields include:
+  - Title, description
+  - Deadline
+  - Priority level
+  - Status (To-do, In Progress, Done)
+  - Tags
+  - Recurrence (Daily, Weekly, Monthly)
+  - Reminders
+- Drag-and-drop task movement
+- Sort and filter options
+- Calendar integration
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+### User Interface
+- Built with Next.js and Tailwind CSS
+- Clean and intuitive layout
+- Responsive for all devices
+- Modal-based and page-based task interactions
 
-## Submission
+---
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## 📁 File Structure
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+task-manager-app/
 
-## Resources
+│
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+├── backend/ # Express.js + MongoDB server
+
+│ ├── controllers/ # Route logic for users and tasks
+
+│ ├── middleware/ # Auth and error-handling middleware
+
+│ ├── models/ # Mongoose schemas (User, Task)
+
+│ ├── routes/ # API endpoints for tasks and users
+
+│ ├── utils/ # Helper functions (e.g., token handling, cron jobs)
+
+│ ├── config/ # MongoDB connection and environment configs
+
+│ ├── server.js # Main backend entry point
+
+│ └── .env.example # Example of environment variables
+
+│
+
+├── frontend/ # Next.js application
+
+│ ├── components/ # Reusable UI components
+
+│ ├── context/ # Global state (e.g., auth, tasks)
+
+
+│ ├── pages/ # Routes
+
+│ │ ├── index.js # Task dashboard
+
+│ │ ├── calendar.js # Calendar view
+
+│ │ ├── login.js # Login form
+
+│ │ ├── register.js # Registration form
+
+│ │ └── settings.js # User settings
+
+│ ├── styles/ # Tailwind CSS files
+
+│ ├── utils/ # API functions and helpers
+
+│ └── tailwind.config.js # Tailwind configuration
+
+│
+
+├── README.md # Project documentation
+
+└── package.json # Dependencies and scripts
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (with Mongoose)
+- **Authentication:** JSON Web Tokens (JWT), bcrypt
+- **Calendar View:** FullCalendar or similar
+- **Drag and Drop:** react-beautiful-dnd
+- **Notifications & Reminders:** Node Cron, browser notifications
+- **Deployment:** Vercel (Frontend), Render (Backend)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋 Author
+
+**Lloyd Brown**  
+Built as part of a MERN stack final year project  
+For academic and professional demonstration guided by Power lean PROJECT ACADEMY
+
+---
+
+## 🧪 Future Improvements
+
+- Google Calendar integration
+- Offline support and PWA functionality
+- Admin panel for team-based task management
+- Enhanced analytics dashboard
+
