@@ -87,7 +87,6 @@ task-manager-app/
 
 │ ├── context/ # Global state (e.g., auth, tasks)
 
-
 │ ├── pages/ # Routes
 
 │ │ ├── index.js # Task dashboard
@@ -111,6 +110,8 @@ task-manager-app/
 ├── README.md # Project documentation
 
 └── package.json # Dependencies and scripts
+
+
 
 ---
 
@@ -137,7 +138,7 @@ This project is licensed under the MIT License.
 
 **Lloyd Brown**  
 Built as part of a MERN stack final year project  
-For academic and professional demonstration guided by Power lean PROJECT ACADEMY
+For academic and professional demonstration under Power Learn Project academy
 
 ---
 
